@@ -1,0 +1,27 @@
+ALGORITHM dot_product
+VAR
+    v1,v2: vector : ARRAY_OF INTEGER[length];
+    i,ps : INTEGER;
+    ps=0;
+    PROCEDURE dot_product(v1,v2)
+    VAR
+        v_length,v1_length,v2_length:INTEGER;
+        v_length=v1_length=v2_length; 
+    BEGIN
+        FOR i FROM 1 TO v_length STEP step1  DO
+            ps = ps + v1[i] * v2[i]
+        END_FOR
+        // procedure dot_product:to_calcule_the_dot_product_of_v1_et_v2
+    END
+BEGIN
+    FOR i FROM 1 TO v_length STEP  DO
+        ps = dot_product(v1,v2)
+        // appel_the_procedure_dot_product
+        IF (ps = 0) THEN
+            v1 and v2 are orthogonaux
+        ELSE
+           v1 and v2 are not orthogonaux
+
+        END_IF
+    END_FOR
+END

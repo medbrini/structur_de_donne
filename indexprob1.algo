@@ -1,0 +1,26 @@
+ALGORITHM somme_des_elements_distincts_de_l_ensemble
+
+VAR
+    tab1 : ARRAY_OF INTEGER[n];
+    tab2 : ARRAY_OF INTEGER[m];
+    sum_dstc,i,j : INTEGER
+    sum_dstc = 0
+    // sum_dstc : somme_des_elements_distincts_de_l_ensemble_tab1_et_tab2
+BEGIN
+    read (n)
+    read (m)
+    FOR i FROM 0 TO n-1 STEP step1  DO
+        IF (tab1[i] <> l_ensemble tab2 ) THEN 
+        sum_dstc = sum_dstc + tab1[i]
+        // ajouter_l_element_distinct_a_la_somme
+        END_IF
+    END_FOR
+    FOR j FROM 0 TO m-1 STEP step1  DO
+        IF (tab2[j] <> l_ensemble tab1) THEN
+            sum_dstc = sum_dstc + tab[j]
+            // ajouter_l_element_distinct_a_la_somme
+        END_IF
+    END_FOR
+
+    calculer sum_dstc
+END
